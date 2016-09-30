@@ -7,9 +7,9 @@ simple helper for browsers which don't support input type=date
 usage
 -----
 
-Add to your web site/app and it will handle any <input class="dateinput"> elements.
+add to your web site/app and it will handle any <input class="dateinput"> elements.
 
-You can also call on elements you create programatically:
+you can also invoke for elements you create programatically:
   dateinput(myElement);
   dateinput(myElement, new Date());
   
@@ -17,5 +17,7 @@ You can also call on elements you create programatically:
 features
 --------
 
-This is just a very basic date picker allowing you to assume input type=date is supported.
-It will fire change events.
+this is just a very basic date picker allowing you to assume input type=date is supported.
+- allows picking a blank value
+- fires change events on the initial element
+- no dependencies, no fluff
