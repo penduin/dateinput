@@ -2,7 +2,7 @@ dateinput
 =========
 
 simple helper for browsers which don't support input type=date
-
+  demo: https://penduin.github.io/dateinput/
 
 usage
 -----
