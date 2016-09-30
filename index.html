@@ -1,0 +1,31 @@
+<html>
+  <head>
+	<title>dateinput examples</title>
+	<script src="dateinput.js"></script>
+  </head>
+  <body>
+	unsupported input type:
+	<br>
+	<input type="nonsense">
+	<hr>
+	type=date, up to the browser:
+	<br>
+	<input type="date">
+	<hr>
+	type=date, with dateinput applied:
+	<br>
+	<input type="date" class="dateinput">
+	<hr>
+	using dateinput_force:
+	<br>
+	<input type="date" class="dateinput dateinput_force">
+	<script>
+	  document.body.appendChild(document.createElement("hr"));
+	  document.body.appendChild(document.createTextNode("programatically:"));
+	  document.body.appendChild(document.createElement("br"));
+	  var input = document.createElement("input");
+	  document.body.appendChild(input);
+	  dateinput(input);
+	</script>
+  </body>
+</html>

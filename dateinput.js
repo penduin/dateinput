@@ -44,7 +44,7 @@ function dateinput(input, value) {
 	} catch (e) {
 		dateSupported = false;
 	}
-	if(!dateSupported) {
+	if(!dateSupported || input.className.indexOf("dateinput_force") >= 0) {
 		input.type = "hidden";
 		year = document.createElement("select");
 		option = document.createElement("option");
@@ -97,7 +97,7 @@ function dateinput(input, value) {
 		parent.insertBefore(day, month.nextSibling);
 		updateDate();
 	} else {
-		input.value = value.toISOString().substring(0, 10);
+		if(value) input.value = value.toISOString().substring(0, 10);
 	}
 }
 
